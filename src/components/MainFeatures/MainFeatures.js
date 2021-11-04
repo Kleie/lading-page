@@ -14,11 +14,17 @@ import Screen03 from "../../assets/image/screen-03.png";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  
+  width: 100%;
+
+  align-item: center;
+  justify-content: center;
+
 `;
 
 const BoxTitle = styled.div`
   font-family: Roboto, sans-serif;
-  width: 1200px;
+  padding: 0 40px;
   margin: 150px auto;
 `;
 const Title = styled.h2`

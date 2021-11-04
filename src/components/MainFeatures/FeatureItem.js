@@ -20,7 +20,7 @@ margin: 20px;
 
 const Text = styled.p`
 font-size: 15px;
-color: ${theme.secundary}
+color: ${theme.secondary}
 `;
 
 

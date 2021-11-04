@@ -35,7 +35,7 @@ const Title = styled.h1`
 `;
 const Info = styled.p`
   font-size: 16px;
-  color: ${theme.secundary};
+  color: ${theme.secondary};
 
   margin-bottom: 40px;
 `;

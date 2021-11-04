@@ -6,13 +6,14 @@ export default function Button({dark, pink, text}) {
   const Dark = styled.button`
   margin: 0 5px;
   padding: 10px 40px;
-  border: 1px solid transparent;
+  border: 1px solid;
   border-radius: 99px;
   cursor: pointer;
   &:hover {
     border: 1px solid ${theme.borderButtonDark};
   }
   background-color: transparent;
+
 
   font-family: "Roboto", sans-serif;
   color: ${theme.fontColorDark};

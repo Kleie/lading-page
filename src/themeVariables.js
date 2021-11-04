@@ -1,6 +1,6 @@
 export const theme = {
     main: "#172755",
-    secundary: "#8794BA",
+    secondary: "#8794BA",
 
     borderButtonDark: "#465b95",
 

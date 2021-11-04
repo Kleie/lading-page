@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { theme } from "../../themeVariables";
-import { useState } from "react";
 
 import Plan from "./Plan";
 
@@ -17,16 +16,16 @@ const Container = styled.div`
 `;
 
 const BoxText = styled.div`
+  font-family: Roboto, sans-serif;
   padding-top: 200px;
 `;
 
 const Title = styled.h2`
-  font-family: Roboto, sans-serif;
   margin-bottom: 30px;
   color: #fff;
 `;
 const Text = styled.p`
-  color: ${theme.secundary};
+  color: ${theme.secondary};
 
   margin-bottom: 50px;
 `;
@@ -40,12 +39,6 @@ const BoxPlan = styled.div`
 `;
 
 export default function PricingPlans() {
-  const [activePlan, setActivePlan] = useState("");
-
-  function handleSelectPlan(namePlan) {
-    setActivePlan(namePlan);
-  }
-
   return (
     <BorderPink>
       <Container>
@@ -61,22 +54,14 @@ export default function PricingPlans() {
             namePlan="Starter"
             numberUsers="up to 3 users"
             price="$29"
-            planSelected={handleSelectPlan}
-            active={activePlan === "Starter"}
+            dark
           />
-          <Plan
-            namePlan="Standard"
-            numberUsers="up to 20 users"
-            price="$99"
-            planSelected={handleSelectPlan}
-            active={activePlan === "Standard"}
-          />
+          <Plan namePlan="Standard" numberUsers="up to 20 users" price="$99" />
           <Plan
             namePlan="Premium"
             numberUsers="up to 200 users"
             price="$299"
-            planSelected={handleSelectPlan}
-            active={activePlan === "Premium"}
+            dark
           />
         </BoxPlan>
       </Container>

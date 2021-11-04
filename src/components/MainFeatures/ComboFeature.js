@@ -28,7 +28,7 @@ export default function ComboFeature({title, text, img, reverse}){
     `;
     const Text = styled.p`
     font-size: 20px;
-    color: ${theme.secundary};
+    color: ${theme.secondary};
     `;
     
     const BoxImg = styled.div``;
